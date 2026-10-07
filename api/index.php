@@ -3,6 +3,8 @@
 // 1. Set environment indicators for serverless Vercel
 $_ENV['VERCEL'] = '1';
 $_SERVER['VERCEL'] = '1';
+$_SERVER['HTTPS'] = 'on';
+$_SERVER['SERVER_PORT'] = '443';
 putenv('VERCEL=1');
 
 // 2. Prepare writable temporary storage directory in /tmp

@@ -39,6 +39,8 @@
     "CACHE_DRIVER": "array",
     "LOG_CHANNEL": "stderr",
     "SESSION_DRIVER": "cookie",
+    "APP_URL": "https://project-bpkad.vercel.app",
+    "ASSET_URL": "https://project-bpkad.vercel.app",
     "VERCEL": "1"
   }
 }
