@@ -272,11 +272,11 @@
                                             <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 mr-1.5 animate-pulse"></span>
                                             Aktif
                                         </span>
-                                        <form method="POST" action="{{ route('admin.tamu.checkout', $tamu) }}" class="inline" onsubmit="return confirm('Checkout tamu {{ $tamu->nama_lengkap }}?')">
+                                        <form method="POST" action="{{ route('admin.tamu.checkout', $tamu) }}" class="inline" onsubmit="return confirm('Selesaikan kunjungan tamu {{ $tamu->nama_lengkap }}?')">
                                             @csrf
-                                            <button type="submit" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-semibold text-amber-700 bg-amber-50 hover:bg-amber-100 border border-amber-200 transition" title="Tandai Kunjungan Selesai">
+                                            <button type="submit" class="inline-flex items-center gap-1 px-2.5 py-1 rounded-lg text-[11px] font-semibold whitespace-nowrap text-amber-700 bg-amber-50 hover:bg-amber-100 border border-amber-200 transition" title="Tandai Kunjungan Selesai">
                                                 <svg class="w-3 h-3" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17 16l4-4m0 0l-4-4m4 4H7m6 4v1a3 3 0 01-3 3H6a3 3 0 01-3-3V7a3 3 0 013-3h4a3 3 0 013 3v1"/></svg>
-                                                Checkout
+                                                Selesai Kunjungan
                                             </button>
                                         </form>
                                     </div>

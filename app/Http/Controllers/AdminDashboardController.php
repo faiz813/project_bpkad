@@ -107,7 +107,7 @@ class AdminDashboardController extends Controller
             'checkout_at'      => now(),
         ]);
 
-        return back()->with('success', "Tamu {$tamu->nama_lengkap} berhasil di-checkout.");
+        return back()->with('success', "Kunjungan tamu {$tamu->nama_lengkap} berhasil diselesaikan.");
     }
 
     /**

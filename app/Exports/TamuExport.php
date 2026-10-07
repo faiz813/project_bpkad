@@ -58,7 +58,7 @@ class TamuExport implements FromQuery, WithHeadings, WithMapping, ShouldAutoSize
             'Bidang Dituju',
             'Tujuan/Keperluan',
             'Status',
-            'Waktu Checkout',
+            'Waktu Selesai Kunjungan',
         ];
     }
 
