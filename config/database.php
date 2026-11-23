@@ -60,7 +60,10 @@ return [
             'strict' => true,
             'engine' => null,
             'options' => extension_loaded('pdo_mysql') ? array_filter([
+                // TiDB Cloud & SSL support — diaktifkan via env MYSQL_ATTR_SSL_CA
                 (PHP_VERSION_ID >= 80500 ? Mysql::ATTR_SSL_CA : PDO::MYSQL_ATTR_SSL_CA) => env('MYSQL_ATTR_SSL_CA'),
+                // Jika TIDB_SSL=true, aktifkan SSL tanpa verifikasi CA (untuk serverless)
+                PDO::MYSQL_ATTR_SSL_VERIFY_SERVER_CERT => env('TIDB_SSL_VERIFY', false),
             ]) : [],
         ],
 
