@@ -43,6 +43,12 @@
     "ASSET_URL": "https://project-bpkad.vercel.app",
     "VERCEL": "1",
     "DB_CONNECTION": "mysql",
+    "DB_HOST": "gateway01.ap-southeast-1.prod.aws.tidbcloud.com",
+    "DB_PORT": "4000",
+    "DB_DATABASE": "test",
+    "DB_USERNAME": "2CFGgn93wj4r7p5.root",
+    "DB_PASSWORD": "OkAzzlNF3c3ej8S4",
+    "MYSQL_ATTR_SSL_CA": "/etc/ssl/certs/ca-certificates.crt",
     "TIDB_SSL_VERIFY": "false"
   }
 }
